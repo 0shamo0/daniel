@@ -2,27 +2,28 @@
   <div id="app">
    <Navigation/>
    <router-view></router-view>
-   <HelloWorld/>
+   <Prefooter/>
    <Footer/>
   </div>
 </template>
 
 <script>
 import Navigation from './components/Navigation.vue'
+import Prefooter from './components/Prefooter.vue' 
 import Footer from './components/Footer.vue'  
-import HelloWorld from './components/HelloWorld.vue' 
 
 export default {
   name: 'App',
   components: {
     Navigation,
-    HelloWorld,
-    Footer
+    Footer,
+    Prefooter
   }
 }
 </script>
 
 <style>
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -33,7 +34,7 @@ export default {
 }
     
 h1 {
-    color: white;        
+    color: red;        
 }
 
 .lorem {

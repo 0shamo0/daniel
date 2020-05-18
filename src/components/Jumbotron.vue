@@ -30,7 +30,6 @@ export default {
     
     .jumbotron {
         background-color: white;
-        height: 100vh;
         border-radius: 0px;
         margin-top: -75px;
     }

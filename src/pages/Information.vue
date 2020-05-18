@@ -57,7 +57,6 @@ export default {
 
 <style scoped>
     h1 {
-        background-color: cadetblue;
         padding-top: 100px;
         margin-top: -72px;
         padding-bottom: 30px;

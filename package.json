@@ -14,6 +14,7 @@
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.13.0",
     "core-js": "^3.6.4",
+    "firebase": "^7.14.4",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
   },
@@ -44,5 +45,17 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## Project setup ``` npm install ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0shamo0/daniel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0shamo0/daniel/issues"
+  },
+  "homepage": "https://github.com/0shamo0/daniel#readme"
 }

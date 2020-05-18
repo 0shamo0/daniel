@@ -11,7 +11,7 @@
 
     <b-collapse id="nav-collapse" is-nav>
       
-      <b-navbar-nav class="mr-auto" style="margin-left: 22%; margin-top: -4px;">
+      <b-navbar-nav class="mr-auto" style="margin-left: 22%; margin-top: -2px;">
        
         <b-nav-item>
             <router-link to="/Menu"  class="nav-link"  style="color: black;">Menu</router-link>
@@ -28,16 +28,23 @@
       </b-navbar-nav>
           
       <b-navbar-nav class="ml-auto">
-       
-        <b-nav-item>   
-                <b-button variant="success" size="sm" style="margin-top: -4px;">
-                    <router-link to="/Connection"  class="nav-link" style="color: white;"><font-awesome-icon icon="user"/>   Connexion</router-link>
-                </b-button>
-                            
-        </b-nav-item>
-                
+                          
+      <div class="dropdown" style="margin-top: 7px;">
+          <button class="btn btn-custom dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #7dbfa1; color: white; font-size: 12px;">
+            CONNEXION
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-top: -8px;">
+                    <b-nav-item class="dealer">  
+                    <router-link to="/Login"  class="nav-link" style="color: black;"><font-awesome-icon icon="user"/> Log-In</router-link>
+                    </b-nav-item>  
+                   <b-nav-item  class="dealer">  
+                    <router-link to="/Signup"  class="nav-link" style="color: black;"><font-awesome-icon icon="user"/> Sign-Up</router-link>
+                    </b-nav-item>
+          </div>
+        </div>         
+                  
         <b-nav-item>
-            <router-link to="/Panier"  class="nav-link" style="color: black;"><font-awesome-icon icon="shopping-cart" />   Panier</router-link>
+            <router-link to="/Panier"  class="nav-link" style="color: black; margin-top: -2px;"><font-awesome-icon icon="shopping-cart" />   Panier</router-link>
                         
         </b-nav-item>
         
@@ -60,24 +67,15 @@ export default {
     #navigation {
         margin-top: -60px;
         padding-bottom: 30px;
-    }    
-    
+    }   
+        
     .nav-link {
         font-size: 12px;
         text-transform: uppercase;
+    }
         
-    }
-    
-    .btn-success {
-        background-color: #7dbfa1;
-        border-color: #7dbfa1;
-        border-radius: 7px;
-    }
-    
-    .btn-success:hover {
-        background-color: red;
-        color: white;
-        border-color: red;
+    .dealer:hover {
+        background-color: #c1e0d2;
     }
     
     .logo {
@@ -85,5 +83,5 @@ export default {
         height: 36px;
         background-image: url(../assets/foodoo.png);
     }
-    
+        
 </style>

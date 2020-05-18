@@ -2,7 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 
 import Accueil from './pages/Accueil.vue';
-import Connection from './pages/Connection.vue';
+import Login from './pages/Login.vue';
+import Signup from './pages/Signup.vue';
 import Information from './pages/Information.vue';
 import Menu from './pages/Menu.vue';
 import Panier from './pages/Panier.vue';
@@ -17,9 +18,14 @@ export default new Router({
       component: Accueil,
     },
       
-    { path: '/Connection', 
-      name: 'connection',
-      component: Connection,
+    { path: '/Login', 
+      name: 'login',
+      component: Login,
+    },
+      
+    { path: '/Signup', 
+      name: 'signup',
+      component: Signup,
     },
       
     { path: '/Information', 
