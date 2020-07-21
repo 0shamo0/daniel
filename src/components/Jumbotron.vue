@@ -8,11 +8,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quam porro blanditiis veniam at, placeat voluptates.</p>
         </div>
         
-        <div class="become_1" style="float: right;">
-            <h2>Become cooking magican</h2>
-            <p class="star" style="font-size: 23px; margin-top: 20px;  color: gold;">★★★★</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quam porro blanditiis veniam at, placeat voluptates.</p>
-        </div>    
+        
     </b-container>
     </div>    
 </div>
@@ -36,7 +32,7 @@ export default {
     
     .container {
         height: 588px;
-        margin-top: 20px;
+        margin-top: 40px;
         background-image: url("../assets/main.png");
         background-repeat: no-repeat;
         background-position: center;
